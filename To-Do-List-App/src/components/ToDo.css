@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #00ffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form .TodoInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+form .TodoInput::placeholder {
+    color: #aaa;
+}
+
+form .TodoBtn {
+    background-color: #4a4aee;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .TodoBtn:hover {
+    background-color: #3a3ad1;
+}
+
+.uoList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
+.uoList ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 20px;
+    background-color: #2c2c2c;
+    border: 1px solid #4a4aee;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray !important; 
+}
+
+.check-btn,
+.del-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.check-btn:hover {
+    color: #00ff88;
+    transform: scale(1.2);
+}
+
+.del-btn:hover {
+    color: #ff4d4d;
+    transform: scale(1.2);
+}
+
+.lastBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clearBtn {
+    background-color: #4a4aee;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clearBtn:hover {
+    background-color: #3a3ad1;
+}
+
+.clearBtn:active {
+    transform: scale(0.98);
+}
+
+
+
+@media (max-width: 600px) {
+    .todo-container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    form .TodoInput {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    form .TodoBtn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .uoList ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .uoList ul li {
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+}
