@@ -1,0 +1,115 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: rgb(218, 206, 206);
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  transition: background 0.4s ease;
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+/* -------- Navbar -------- */
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.app.dark .navbar {
+  background: rgba(50, 50, 50, 0.4);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.app.dark .logo {
+  color: #f5f5f5;
+}
+
+/* -------- Toggle Button -------- */
+.toggleBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.toggleBtn:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+/* -------- Body -------- */
+.body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+
+
+/* Toggle button */
+.toggleBtn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: #333; /* Light mode icon color */
+}
+
+.toggleBtn:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+/* Dark Mode Button Icon */
+.app.dark .toggleBtn {
+  color: #f5f5f5; /* White icon in dark mode */
+}

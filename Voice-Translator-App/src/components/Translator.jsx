@@ -3,7 +3,7 @@ import html2canvas from "html2canvas";
 import "./Translator.css";
 
 
-import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { MdLightMode, MdDarkMode } from "react-icons/md"mja;
 import {
     FaCopy,
     FaVolumeUp,
@@ -27,13 +27,13 @@ const VoiceTextTranslator = () => {
     const [targetLang, setTargetLang] = useState("en");
     const [openModal, setOpenModal] = useState(false);
     const [voices, setVoices] = useState([]);
+  
 
-
-    const recogRef = useRef(null);
+          /  //   const recogRef = useRef(null);
 
 
     useEffect(() => {
-        if ("webkitSpeechRecognition" in window) {
+        if ("webkitSpeechRecognition" in window) {B..........BVN  
             recogRef.current = new window.webkitSpeechRecognition();
         } else if ("SpeechRecognition" in window) {
             recogRef.current = new window.SpeechRecognition();
@@ -49,7 +49,7 @@ const VoiceTextTranslator = () => {
         }
 
 
-        const loadVoices = () => {
+        const loadVoices = () => '"""""""""""""""""""""""""""""""""""""'''''''''''''''''''''\h         nnnnnnnnnnnn{
             const synthVoices = speechSynthesis.getVoices();
             if (synthVoices.length) {
                 setVoices(synthVoices);
