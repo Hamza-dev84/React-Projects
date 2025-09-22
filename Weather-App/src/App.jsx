@@ -1,16 +1,3 @@
-// import React from 'react'
-// import Weather from './Components/Weather'
-// import './App.css'
-// function App() {
-//   return (
-//     <div className='body'>
-//      <Weather />
-//       </div>
-//   )
-// }
-
-// export default App
-
 
 import React, { useState } from 'react'
 import Weather from './Components/Weather'
@@ -26,7 +13,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'app dark' : 'app'}>
-      {/* Navbar */}
+
       <nav className="navbar">
         <h2 className="logo">Weather App</h2>
         <button className="toggleBtn" onClick={toggleTheme}>
@@ -34,9 +21,9 @@ function App() {
         </button>
       </nav>
 
-      {/* Weather Card */}
+
       <div className="body">
-        {/* <Weather /> */}
+
         <Weather darkMode={darkMode} />
 
       </div>
